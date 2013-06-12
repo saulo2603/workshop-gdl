@@ -73,7 +73,7 @@ int main()
 
 	 initW32(); /* Necesaria para compilar en Windows */ 
 	 	
-   int fd, fd2; /* los descriptores de archivos */
+	int fd, fd2; /* los descriptores de archivos */
 
    /* para la información de la dirección del servidor */
    struct sockaddr_in server;
@@ -124,7 +124,7 @@ int main()
 
       printf("Se obtuvo una conexión desde %s\n", inet_ntoa(client.sin_addr) );
       /* que mostrará la IP del cliente */
-
+	  
       send(fd2,"Bienvenido a mi servidor.\n",22,0);
       /* que enviará el mensaje de bienvenida al cliente */
       

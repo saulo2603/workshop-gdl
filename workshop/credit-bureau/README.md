@@ -9,10 +9,13 @@ Instalacion de Software
 Instrucciones para compilar
 ---------------------------
 1. Ingresar al directorio src/c
+	C:\Users\usuario\Documents\GitHub\GDL\workshop-gdl\workshop\credit-bureau\src\c
+
 
 ### Windows
 2. Generar el archivo Makefile con esta instruccion:
     `cmake -G "MinGW Makefiles"`
+     gcc cb.c -lws2_32
 3. Compilar el programa con la siguiente instruccion:
     `mingw32-make.exe`
 
