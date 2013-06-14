@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+    <struts>
+    	<package name="com.recluit.lab" extends="struts-default">
+    		
+    		<action name="index">
+    			<result>/index.jsp</result>    			
+    		</action>
+    		<action name="books" class="com.recluit.lab.action.BookActionRest">
+    			<result name="success">/books.jsp</result>
+    			<result name="error">/error.jsp</result>
+    		</action> 
+    		
+    		
+    		
+    		<action name="rfcIndex">
+    			<result>/rfcIndex.jsp</result>    			
+    		</action>
+    		<!-- class="com.recluit.lab.action.RfcActionRest"  -->
+    		<action name="loanForm" class="com.recluit.lab.action.RfcActionRest">    	
+    			<result name="success">/loanForm.jsp</result>    		    		
+    		</action>
+    		
+    		   		
+    	</package>
+    	
+    </struts>
